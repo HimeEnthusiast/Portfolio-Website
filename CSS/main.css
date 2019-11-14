@@ -1,0 +1,128 @@
+/* Global CSS for main layout */
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'AbrilFatFace';
+    src: url('/Fonts/abrilfatface-regular-webfont.woff') format('woff'),
+         url('/Fonts/abrilfatface-regular-webfont.woff2') format('woff2');
+}
+
+/* All */
+html, body {
+    font-family: 'Roboto', sans-serif;
+    overflow: hidden;
+}
+
+/* Menu */
+#menu {
+    transition: 0.3s;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: #FFFFFF;
+    top: 0;
+    left: 0;
+    width: 0;
+    overflow-x: hidden;
+    box-shadow: 10px 0px 10px rgba(0, 0, 0, 0.569);
+}
+
+#button-container {
+    margin-top: 10vh;
+    text-align: center;
+}
+
+#button-container button{
+    font-family: 'AbrilFatFace', sans-serif;
+    font-size: 50px;
+    display: inline-block;
+    padding: 5vh 0 5vh 0;
+    border: none;
+    width: 100%;
+    background-color:transparent;
+}
+
+#button-container hr {
+    width: 150px;
+    border: 0;
+    height: 2px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.09), rgba(0, 0, 0, 0));
+}
+
+#button-container button:hover {
+    color: #F6006A;
+    transition: 0.2s;
+}
+
+#menu-button {
+    position: sticky;
+    z-index: 2;
+    float: right;
+    padding: 20px;
+    border: none;
+    background-color: transparent;
+}
+
+#menu-icon {
+    width: 9%;
+    min-width: 50px;
+    max-width: 70px;
+    fill: #B7004F;
+}
+
+/* Left Pink */
+.left {
+    background-color: #F6006A;
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+/* Right White */
+.right {
+    width: 50%;
+    height: 100vh;
+    float: right;
+}
+
+/* Mobile Layout */
+
+@media only screen and (max-width: 767px) and (orientation:portrait) {
+    /* Menu */
+    #menu {
+        height: 0;
+        width: 100%;
+        top: 0;
+    }
+
+    #menu-icon {
+        fill: #FFFFFF;
+        transition: 0.1s;
+    }
+
+    #button-container {
+        margin-top: 9vh;
+    }
+
+}
+
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+    /* Menu */
+    #menu {
+        height: 0;
+        width: 100%;
+        top: 0;
+    }
+
+    #menu-icon {
+        fill: #B7004F;
+        transition: 0.1s;
+    }
+
+    #button-container {
+        margin-top: 9vh;
+    }
+
+}

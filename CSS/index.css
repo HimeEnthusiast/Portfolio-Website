@@ -1,0 +1,100 @@
+/* Home Page CSS */
+
+/* Left Pink */
+.left {
+    display: flex;
+    align-items: center;
+}
+
+/* Logo */
+#logo {
+    width: 80%;
+    margin-left: 8%;
+    filter: drop-shadow(15px 15px rgba(0, 0, 0, 0.486));
+}
+
+/* Blurb */
+.content-container {
+    text-align: center;
+    margin-top: 25vh;
+    margin-left: 10%;
+    width: 80%;
+}
+
+#blurb {
+    font-size: 20px;
+    padding: 10px;
+}
+
+/* Links */
+#link-buttons {
+    padding: 20px;
+}
+
+#github-logo, #twitter-logo {
+    width: 15%;
+    max-width: 70px;
+    min-width: 50px;
+    padding: 10px;
+    color: #F6006A;
+}
+
+#github-logo:hover, #twitter-logo:hover {
+    transition: 0.3s;
+    color: #B7004F;
+}
+
+/* Mobile Layout */
+
+/* Portrait */
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+    /* Blurb */
+    .content-container {
+        margin-top: -4%;
+    }
+
+    #link-buttons {
+        padding: 0px;
+    }
+}
+
+
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    /* Left Pink */
+    .left {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        top: 0;
+    }
+    
+    /* Right White */
+    .right {
+        position: absolute;
+        width: 100%;
+        height: 50%;
+        bottom: 0;
+    }
+    
+    /* Logo */
+    #logo {
+        width: 85%;
+        max-height: 320px;
+        margin-top: 8%;
+        margin-left: 6%;
+    }
+    
+    /* Blurb */
+    .content-container {
+        padding: 10px;
+        text-align: center;
+        margin-left: 2.5%;
+        margin-top: 5%;
+        width: 90%;
+    }
+    
+    /* Links */
+    #github-logo, #twitter-logo {
+        width: 25%;
+    }
+}
