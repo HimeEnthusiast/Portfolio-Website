@@ -1,0 +1,71 @@
+/* CSS for about section */
+
+/* Left side */
+.left {
+    color: #ffffff;
+}
+
+#about-left {
+    display: block;
+}
+
+#left-content {
+    margin-top: 12vh;
+}
+
+#aboutme, #education {
+    padding: 5%;
+}
+
+#aboutme {
+    padding-bottom: 10%;
+}
+
+/* Right Side */
+#right-content {
+    margin-top: 12vh;
+    padding: 5%;
+}
+
+#icons {
+    /* display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    grid-gap: 5%; */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#icons svg{
+    fill: #324761;
+    width: 27%;
+    max-width: 160px;
+    min-width: 100px;
+}
+
+/* Text */
+.about-title {
+    font-family: 'AbrilFatFace';
+    font-size: 50px;
+}
+#about-text {
+    padding-top: 10px;
+    font-size: 30px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    #about-left {
+        height: 70%;
+    }
+
+    #left-content {
+        margin-top: 5%;
+    }
+
+    #aboutme {
+        padding-bottom: 10%;
+    }
+}

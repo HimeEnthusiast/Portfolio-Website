@@ -3,20 +3,19 @@
 /* Left Pink */
 .left {
     display: flex;
-    align-items: center;
+    justify-content: center;
 }
 
 /* Logo */
 #logo {
     width: 80%;
-    margin-left: 8%;
     filter: drop-shadow(15px 15px rgba(0, 0, 0, 0.486));
 }
 
 /* Blurb */
 .content-container {
     text-align: center;
-    margin-top: 25vh;
+    margin-top: 40%;
     margin-left: 10%;
     width: 80%;
 }
@@ -24,6 +23,9 @@
 #blurb {
     font-size: 20px;
     padding: 10px;
+    font-weight: 600;
+    line-height: 1.5;
+    font-size: 24px;
 }
 
 /* Links */
@@ -62,12 +64,16 @@
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     /* Left Pink */
     .left {
-        position: absolute;
         width: 100%;
         height: 50%;
         top: 0;
+        font-size: 10px;
     }
     
+    .section {
+        height: 100vh;
+    }
+
     /* Right White */
     .right {
         position: absolute;
@@ -78,23 +84,36 @@
     
     /* Logo */
     #logo {
-        width: 85%;
+        width: 80%;
         max-height: 320px;
-        margin-top: 8%;
-        margin-left: 6%;
+        margin-top: 9%;
+        z-index: 1;
     }
     
     /* Blurb */
     .content-container {
+        font-size: 15px;
         padding: 10px;
         text-align: center;
         margin-left: 2.5%;
         margin-top: 5%;
         width: 90%;
     }
+
+    #blurb {
+        font-size: 18px;
+    }
     
     /* Links */
     #github-logo, #twitter-logo {
         width: 25%;
+    }
+
+    #link-buttons {
+        padding: 5px;
+    }
+
+    #menu {
+        z-index: 2;
     }
 }
