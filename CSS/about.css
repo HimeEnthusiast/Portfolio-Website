@@ -1,12 +1,20 @@
 /* CSS for about section */
 
 /* Left side */
-.left {
-    color: #ffffff;
+
+#about-right {
+    width: 50%;
+    height: 100vh;
+    float: right;
 }
 
 #about-left {
     display: block;
+    background-color: #F6006A;
+    color: #ffffff;
+    width: 50%;
+    height: 100vh;
+    float: left;
 }
 
 #left-content {
@@ -27,22 +35,36 @@
     padding: 5%;
 }
 
-#icons {
-    /* display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-    grid-gap: 5%; */
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8%;
-    justify-content: center;
+/* Icons */
+#programming, #database, #framework {
+    /* margin-bottom: 7%; */
     padding: 10px;
+    margin-right: 10px;
+}
+
+#icon-title {
+    background-color: #F6006A;
+    border-radius: 9px;
+    color: #ffffff;
+    font-weight: bolder;
+    width: 100%;
+    padding: 10px 0px 10px 10px;
+    display: block;
+}
+
+#programming-icons, #database-icons, #framework-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(70px, 160px));
+    grid-gap: 15px;
+    justify-content: center;
+    padding: 20px;
 }
 
 #icons svg{
     fill: #324761;
-    width: 27%;
-    max-width: 160px;
-    min-width: 100px;
+    width: 20%;
+    vertical-align: middle;
+    padding: 5px;
 }
 
 /* Text */
@@ -58,7 +80,43 @@
 /* Mobile */
 @media only screen and (max-width: 767px) and (orientation: portrait) {
     #about-left {
-        height: 70%;
+        padding-top: 10%;
+        width: 100%;
+        font-size: 10px;
+        height: 100vh;
+    }
+
+    #education {
+        padding-top: 15%;
+    }
+
+    #about-right {        
+        width: 100%;
+        height: 100vh;
+    }
+
+    /* Icons */
+    #icons {
+        padding-top: 10%;
+    }
+
+    #icons svg {
+        width: 55%;
+        min-width: 0px;
+    }
+
+    #programming-icons, #database-icons, #framework-icons {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(70px, 60px));
+        gap: 30px;
+    }
+
+    #programming-icons, #database-icons, #framework-icons span {
+        text-align: center;
+    }
+
+    #right-content {
+        margin-top: 15%;
     }
 
     #left-content {

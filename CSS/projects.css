@@ -1,0 +1,19 @@
+#projects {
+    height: 100vh;
+    /* width: 100%; */
+    /* background-color: #F6006A; */
+
+}
+
+#whole {
+    width: 100%;
+    background-color: #F6006A;
+    justify-content: initial;
+}
+
+/* Text */
+#projects-title {
+    font-family: 'AbrilFatFace';
+    font-size: 50px;
+    color: #ffffff;
+}
