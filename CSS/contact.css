@@ -1,3 +1,23 @@
+#left-contact-content, #right-contact-content {
+    margin-top: 12vh;
+    padding: 5%;
+}
+
+#contact-right {
+    width: 50%;
+    height: 100vh;
+    float: right;
+}
+
+#contact-left {
+    display: block;
+    background-color: #F6006A;
+    color: #ffffff;
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
 #contact-title {
     font-family: 'AbrilFatFace';
     font-size: 50px;
@@ -7,4 +27,36 @@
 #links-title {
     font-family: 'AbrilFatFace';
     font-size: 50px;
+}
+
+#contact-form {
+    padding: 10px;
+}
+
+input {
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    color: #324761;
+}
+
+#contact-form textarea {
+    width: 90%;
+    height: 200px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px 0 15px 0;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    color: #324761;
+}
+
+#send {
+    width: 120px;
+    height: 40px;
+    background-color: #B7004F;
+    color: #ffffff;
 }

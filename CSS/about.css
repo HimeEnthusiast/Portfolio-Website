@@ -25,8 +25,22 @@
     padding: 5%;
 }
 
+#sheridan {
+    font-weight: bolder;
+    font-size: 35px;
+}
+
+#program-name {
+    font-size: 27px;
+}
+
+#completion {
+    font-style: italic;
+    font-size: 24px;
+}
+
 #aboutme {
-    padding-bottom: 10%;
+    padding-bottom: 15%;
 }
 
 /* Right Side */
@@ -71,10 +85,11 @@
 .about-title {
     font-family: 'AbrilFatFace';
     font-size: 50px;
+    padding-bottom: 1%;
 }
 #about-text {
     padding-top: 10px;
-    font-size: 30px;
+    font-size: 25px;
 }
 
 /* Mobile */

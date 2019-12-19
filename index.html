@@ -85,15 +85,18 @@
             <section id="left-content">
                 <div id="aboutme">
                     <h1 class="about-title">About Me</h1>
-                    <p id="about-text">I'm a software development student currently attending Sheridan College in
-                        Ontario, Canada. I enjoy developing various web apps. I'm always eager to learn new things!</p>
+                    <p id="about-text">I'm a student currently attenting Sheridan College. I enjoy learning new
+                        languages and technologies to use in my work and to stay on top of what's needed in the
+                        industry. I'm currently focused on web development and I soon plan to study mobile app
+                        development. </p>
                 </div>
 
                 <div id="education">
                     <h1 class="about-title">Education</h1>
-                    <p id="about-text">Sheridan College<br>
-                        Software Development and Network Engineering<br>
-                        To be completed 2020
+                    <p id="about-text">
+                        <span id="sheridan">Sheridan College</span><br>
+                        <span id="program-name">Software Development and Network Engineering</span><br>
+                        <span id="completion">To be completed 2020</span>
                     </p>
                 </div>
             </section>
@@ -192,11 +195,13 @@
 
     <!-- Projects Section -->
     <div class="section" id="projects">
-        <div class="left">
-            <h1 id="projects-title">Projects</h1>
-            <div id="project-views">
-                <!-- Boxes go here -->
-            </div>
+        <div id="project-left">
+            <section id="project-content">
+                <h1 id="projects-title">Projects</h1>
+                <div id="project-views">
+                    <!-- Boxes go here -->
+                </div>
+            </section>
         </div>
         <div class="right">
 
@@ -206,11 +211,33 @@
 
     <!-- Contact section -->
     <div class="section" id="contact">
-        <div class="left" id="contact-left">
-            <h1 id="contact-title">Contact</h1>
+        <div id="contact-left">
+            <section id="left-contact-content">
+                <h1 id="contact-title">Contact</h1>
+                <form id="contact-form">
+                    <p class="form-piece">
+                        <label for="subject">Subject</label><br>
+                        <input type="text" id="subject" name="subject" required>
+                    </p>
+
+                    <p class="form-piece">
+                        <label for="email">Email</label><br>
+                        <input type="email" id="email" name="email" required>
+                    </p>
+
+                    <p class="form-piece">
+                        <label for="message">Message</label><br>
+                        <textarea id="message" name="message" required></textarea>
+                    </p>
+
+                    <input type="submit" id="send" name="send" value="Send">
+                </form>
+            </section>
         </div>
-        <div class="right" id="contact-right">
-            <h1 id="links-title">Links</h1>
+        <div id="contact-right">
+            <section id="right-contact-content">
+                <h1 id="links-title">Links</h1>
+            </section>
         </div>
     </div>
     <!-- End of contact section -->

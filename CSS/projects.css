@@ -1,14 +1,25 @@
+#project-left {
+    display: block;
+    background-color: #F6006A;
+    color: #ffffff;
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+#project-content {
+    padding: 5%;
+    /* display: block; */
+}
+
 #projects {
     height: 100vh;
-    /* width: 100%; */
-    /* background-color: #F6006A; */
-
+    display: initial;
 }
 
 #whole {
     width: 100%;
     background-color: #F6006A;
-    justify-content: initial;
 }
 
 /* Text */
