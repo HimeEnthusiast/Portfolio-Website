@@ -2,7 +2,6 @@
 
 /* Fonts */
 @import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
-
 @font-face {
     font-family: 'AbrilFatFace';
     src: url('../Fonts/abrilfatface-regular-webfont.woff') format('woff'),
@@ -24,6 +23,7 @@ a:active, a:focus {
     outline: 0;
     border: none;
 }
+
 
 /* Menu */
 #menu {
@@ -83,7 +83,8 @@ a:active, a:focus {
     fill: #B7004F;
 }
 
-/* Left Pink */
+
+/* Left / Pink */
 .left {
     background-color: #F6006A;
     width: 50%;
@@ -91,16 +92,18 @@ a:active, a:focus {
     float: left;
 }
 
-/* Right White */
+
+/* Right / White */
 .right {
     width: 50%;
     height: 100vh;
     float: right;
 }
 
-/* Mobile Layout */
 
+/* Mobile Layout */
 @media only screen and (max-width: 767px) and (orientation:portrait) {
+    
     /* Menu */
     #menu {
         left: 0%;
@@ -121,6 +124,7 @@ a:active, a:focus {
 }
 
 @media only screen and (max-width: 767px) and (orientation:landscape) {
+    
     /* Menu */
     #menu {
         height: 0%;
