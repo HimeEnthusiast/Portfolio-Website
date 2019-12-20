@@ -7,6 +7,12 @@
     float: left;
 }
 
+#project-right {
+    width: 50%;
+    height: 100vh;
+    float: right;
+}
+
 #project-content {
     padding: 5%;
     /* display: block; */
@@ -27,4 +33,34 @@
     font-family: 'AbrilFatFace';
     font-size: 50px;
     color: #ffffff;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    #project-left {
+        width: 100%;
+    }
+
+    #project-right {
+        display: none;
+    }
+
+    #projects-title {
+        text-align: center;
+    }
+
+    #project-content {
+        margin-top: 15%;
+    }
+}
+
+/* Landscape */
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+    #project-left {
+        width: 100%;
+    }
+
+    #project-right {
+        display: none;
+    }
 }

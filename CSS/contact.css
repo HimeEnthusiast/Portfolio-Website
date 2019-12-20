@@ -51,6 +51,7 @@ input {
     border-radius: 5px;
     margin: 5px 0 15px 0;
     padding: 5px;
+    resize: none;
     font-family: 'Roboto', sans-serif;
     color: #324761;
 }
@@ -60,4 +61,146 @@ input {
     height: 40px;
     background-color: #B7004F;
     color: #ffffff;
+}
+
+#send:hover {
+    background-color: #ffffff;
+    color: #F6006A;
+    transition: 0.3s;
+}
+
+#link-content {
+    margin-top: 15%;
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* Links */
+#contact-link-buttons {
+    padding: 20px;
+}
+
+#github-logo-b, #linkedin-logo-b {
+    width: 15%;
+    max-width: 70px;
+    min-width: 50px;
+    padding: 10px;
+    margin: 20px 50px 0 50px;
+    fill: #F6006A;
+}
+
+#github-logo-b:hover, #linkedin-logo-b:hover {
+    transition: 0.3s;
+    fill: #B7004F;
+}
+
+#envelope {
+    fill: #F6006A;
+    width: 5%;
+    vertical-align: middle;
+    padding: 5px;
+}
+
+/* Mobile */
+@media only screen and (max-width: 767px) and (orientation: portrait) {
+    #contact-left {
+        width: 100%;
+        height: 73%;
+    }
+
+    #left-contact-content {
+        margin-top: 13%;
+    }
+
+    input {
+        height: 30px;
+        font-size: 18px;
+    }
+    
+    #contact-form textarea {
+        height: 150px;
+    }
+
+    #right-contact-content {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    #contact-right {
+        width: 100%;
+        height: 25%;
+        background-color: #F6006A;
+        color: #ffffff;
+    }
+
+    #gmail {
+        font-size: 22px;
+    }
+
+    #github-logo-b, #linkedin-logo-b {
+        width: 15%;
+        margin: 0 10px 0 10px;
+        fill: #ffffff;
+    }
+
+    #envelope {
+        fill: #ffffff;
+        width: 6%;
+    }
+
+    #links-title {
+        display: none;
+    }
+}
+
+/* Landscape */
+@media only screen and (max-width: 767px) and (orientation:landscape) {
+
+    #left-contact-content, #right-contact-content {
+        margin-top: 0;
+        padding-bottom: 0;
+    }
+
+    input {
+        width: 90%;
+        height: 25px;
+        margin: 3px 0 0 0;
+    }
+
+    #sub {
+        float: left;
+        width: 50%;
+        /* padding: 0px; */
+    }
+
+    #mail {
+        float: right;
+        width: 50%;
+        /* margin-left: 1px; */
+    }
+
+    #mess {
+        margin-top: 65px;
+    }
+
+
+    #contact-form textarea {
+        width: 95%;
+        height: 100px;
+        margin: 5px 0 10px 0;
+    }
+    
+    #links-title {
+        display: none;
+    }
+
+    #link-content {
+        margin-top: 35%;
+    }
+
+    #github-logo-b, #linkedin-logo-b {
+        width: 15%;
+        margin: 0 10px 0 10px;
+    }
 }

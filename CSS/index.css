@@ -29,21 +29,22 @@
 }
 
 /* Links */
-#link-buttons {
+#home-link-buttons {
     padding: 20px;
 }
 
-#github-logo, #twitter-logo {
+#github-logo-a, #linkedin-logo-a {
     width: 15%;
     max-width: 70px;
     min-width: 50px;
     padding: 10px;
-    color: #F6006A;
+    margin: 20px 10px 0 10px;
+    fill: #F6006A;
 }
 
-#github-logo:hover, #twitter-logo:hover {
+#github-logo-a:hover, #linkedin-logo-a:hover {
     transition: 0.3s;
-    color: #B7004F;
+    fill: #B7004F;
 }
 
 /* Mobile Layout */
@@ -52,7 +53,15 @@
 @media only screen and (max-width: 767px) and (orientation:landscape) {
     /* Blurb */
     .content-container {
-        margin-top: -4%;
+        margin-top: 20%;
+    }
+
+    #blurb {
+        font-size: 20px;
+    }
+
+    #github-logo-a, #linkedin-logo-a {
+        margin: -20px 10px 0 10px;
     }
 
     #link-buttons {
@@ -101,16 +110,12 @@
     }
 
     #blurb {
-        font-size: 18px;
+        font-size: 20px;
     }
     
     /* Links */
-    #github-logo, #twitter-logo {
-        width: 25%;
-    }
-
-    #link-buttons {
-        padding: 5px;
+    #github-logo-a, #linkedin-logo-a {
+        width: 23%;
     }
 
     #menu {
