@@ -32,7 +32,7 @@ a:active, a:focus {
     position: fixed;
     z-index: 1;
     background-color: #FFFFFF;
-    top: 0;
+    top: 0%;
     left: -50%;
     width: 350px;
     overflow: hidden;
@@ -103,15 +103,15 @@ a:active, a:focus {
 @media only screen and (max-width: 767px) and (orientation:portrait) {
     /* Menu */
     #menu {
-        left: 0;
-        height: 0;
+        left: 0%;
+        height: 0%;
         width: 100%;
-        top: 0;
+        top: 0%;
         overflow: hidden;
     }
 
     #menu-icon {
-        fill: #FFFFFF;
+        /* fill: #FFFFFF; */
         transition: 0.1s;
     }
 
@@ -123,9 +123,10 @@ a:active, a:focus {
 @media only screen and (max-width: 767px) and (orientation:landscape) {
     /* Menu */
     #menu {
-        height: 0;
+        height: 0%;
         width: 100%;
-        top: 0;
+        top: 0%;
+        left: 0%;
     }
 
     #menu-icon {

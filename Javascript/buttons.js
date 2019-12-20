@@ -7,12 +7,10 @@ function menuChange() {
     if (open == false) { //If menu is closed
         if (portrait.matches) { //If in mobile portrait mode
             document.getElementById("menu").style.height='100%';
-            document.getElementById("menu-icon").style.fill='#B7004F';
             open = true; //Set menu status to open
         
         } else if (landscape.matches) { //In mobile landscape mode
             document.getElementById("menu").style.height='100%';
-            document.getElementById("menu-icon").style.fill='#B7004F';
             open = true; //Set menu status to open
         
         } else { //In desktop display
@@ -24,12 +22,10 @@ function menuChange() {
     } else { //If menu is open
         if (portrait.matches) {
             document.getElementById("menu").style.height='0';
-            document.getElementById("menu-icon").style.fill='#FFFFFF';
             open = false;
         
         } else if (landscape.matches) {
             document.getElementById("menu").style.height='0';
-            document.getElementById("menu-icon").style.fill='#B7004F';
             open = false;
         
         } else {
